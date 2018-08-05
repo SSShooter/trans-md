@@ -12,7 +12,7 @@ let folderRecursion = async function (targetPath) {
         await translator(filedir);
       }
     } else {
-      folderRecursion(filedir);
+      await folderRecursion(filedir);
     }
   }
 }
